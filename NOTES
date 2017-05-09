@@ -1,0 +1,33 @@
+* Ability to optionally prepend log messages with '[svn:<n>]' or '[r:<n>]'
+  and/or to prefix '\n\n[svn:<n>] <uri>'
+
+* On multiline comments, either duplicate line 1 as git commit summary, run on
+  multiple lines as they are in SVN (git treats this differently, for example
+  'git log --oneline' displays the lines concatenated), or make the summary
+  something like "SVN Commit <n>" and the body be the svn commit message.
+
+
+
+git init --bare aSQLiteManager.git.BARE
+Initialized empty Git repository in /home/krayon/work/software/aSQLiteManager.git.BARE/
+
+git clone aSQLiteManager.git.BARE  aSQLiteManager.git
+Cloning into 'aSQLiteManager.git'...
+
+cd aSQLiteManager.git
+
+git commit --allow-empty -m 'Init GIT repository for migration from SVN'
+
+echo -e '.gitignore\n.svn' >.gitignore
+
+svn co https://svn.code.sf.net/p/asqlitemanager/code/aSQLiteManager/ .
+
+svn log >.svn/.COMPLETE_LOG
+
+
+
+
+
+svn co -r 4 https://svn.code.sf.net/p/asqlitemanager/code/aSQLiteManager/ .
+
+
