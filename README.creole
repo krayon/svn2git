@@ -5,7 +5,7 @@ anyway)
 
 == Rationale ==
 
-There's MANY SVN to GIT migration tools out there ( //svn2git// //svntogit//
+There's MANY SVN to GIT migration tools out there ( //svn2git//, //svntogit//,
 //svn-to-git// ), most depending on the 'git svn' extension.
 
 Why then, have I written YET another one?! Because all the ones I tried didn't
@@ -16,5 +16,16 @@ KNOW it doesn't.
 
 * Uses 'svn' to clone the SVN repository.
 * Uses 'git' to create the repo and commit each revision in turn.
+
+== TODO ==
+
+* Ability to optionally prepend log summary messages with '[svn:<n>]' or
+'[r:<n>]'.
+* Ability to optionally append '[svn:<n>] <url>' or '[r:<n>] <url>' to the full
+(multi-line) commit message..
+
+== BUGS ==
+
+-
 
 <<< vim:set ts=4 sw=4 tw=80 et ai si syn=creole: >>>
