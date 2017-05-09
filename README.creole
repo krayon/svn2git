@@ -19,10 +19,16 @@ KNOW it doesn't.
 
 == TODO ==
 
-* Ability to optionally prepend log summary messages with '[svn:<n>]' or
-'[r:<n>]'.
+* Ability to optionally prefix commit messages with '[svn:<n>]' or '[r:<n>]'.
 * Ability to optionally append '[svn:<n>] <url>' or '[r:<n>] <url>' to the full
-(multi-line) commit message..
+(multi-line) commit message.
+* Add flexible options for multiline comments:
+** Duplicate line 1 as the git commit message summary (first line); or
+** Verbatim - no enforced blank line after first line (git treats this
+differently, for example 'git log ~--oneline' displays the lines concatenated);
+or
+** Custom commit message summary (first line) with the SVN commit message in the
+following paragraph.
 
 == BUGS ==
 

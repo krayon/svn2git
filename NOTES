@@ -1,9 +1,3 @@
-* On multiline comments, either duplicate line 1 as git commit summary, run on
-  multiple lines as they are in SVN (git treats this differently, for example
-  'git log --oneline' displays the lines concatenated), or make the summary
-  something like "SVN Commit <n>" and the body be the svn commit message.
-
-
 
 git init --bare aSQLiteManager.git.BARE
 Initialized empty Git repository in /home/krayon/work/software/aSQLiteManager.git.BARE/
