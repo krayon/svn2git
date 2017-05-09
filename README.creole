@@ -1,0 +1,20 @@
+= SVN2GIT =
+
+An SVN to GIT migration tool (git-svn free) written in bash that works (for me
+anyway)
+
+== Rationale ==
+
+There's MANY SVN to GIT migration tools out there ( //svn2git// //svntogit//
+//svn-to-git// ), most depending on the 'git svn' extension.
+
+Why then, have I written YET another one?! Because all the ones I tried didn't
+work :S I make no guarantees that this tool takes care of everything, in fact I
+KNOW it doesn't.
+
+== Features ==
+
+* Uses 'svn' to clone the SVN repository.
+* Uses 'git' to create the repo and commit each revision in turn.
+
+<<< vim:set ts=4 sw=4 tw=80 et ai si syn=creole: >>>
